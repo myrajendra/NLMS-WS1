@@ -1,0 +1,15 @@
+<section class="cards_view">
+  <section *ngFor="let _dashboard of dashboard_data">
+    <h3 align="center">{{_dashboard.main_title}}</h3>
+    <mat-card *ngFor="let view of _dashboard._view">
+      <section>
+        <h4>{{view.title}}</h4>
+        <p>{{view.total_title}}</p>
+        <p>{{view.total_count}}</p>
+        <p>{{view.day_count}}</p>
+        <p>{{view.month_count}}</p>
+        <p>{{view.year_count}}</p>
+      </section>
+    </mat-card>
+  </section>
+</section>

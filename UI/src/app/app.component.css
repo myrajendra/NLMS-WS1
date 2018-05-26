@@ -1,0 +1,77 @@
+mat-toolbar{
+    /* background-color: #20ef28c9; */
+    color:#ffffff;
+    font-weight: bold;
+    position: absolute;
+    float: top;
+    top: 0px;
+    left: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#sign_off{
+    display: flex;
+    right: 1%;
+    float: right;
+    position: absolute;
+}
+
+mat-sidenav-container{
+    top: 10% !important;
+}
+
+mat-sidenav{
+    background-color: #3f51b5;
+    box-shadow: 0 4px 8px 0;
+}
+
+mat-sidenav-content{
+    padding:2px;
+}
+
+.mat-list .mat-list-item, .mat-nav-list .mat-list-item, .mat-selection-list .mat-list-item {
+    color:#ffffff;
+    font-weight: bold;
+    top:0px;
+}
+
+.login_view{
+    width:30vh;
+}
+
+mat-card{
+    background-color: #283468;
+    text-align: center;
+    color:#fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.login_box {
+    position: absolute;
+    top: 20%;
+    margin: auto;
+    left: 35%;
+    width: 25%;
+    height: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 0px;
+    border-radius: 4px;
+    padding:25px;
+}
+
+.login_box header{
+    margin-bottom: 2%;
+}
+
+#sign_on{
+    margin-top: 2%;
+    padding:10px;
+    width:100% !important;
+    background-color: #263466;
+    color:#fff;
+}
+
+#sign_on:disabled{
+    background-color: #8288a5;
+    cursor: not-allowed;
+}

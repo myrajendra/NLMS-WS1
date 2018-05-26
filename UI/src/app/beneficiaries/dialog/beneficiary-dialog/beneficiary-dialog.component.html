@@ -1,0 +1,62 @@
+<section>
+  <div layout="row" style="position:sticky;top:0;">
+    <button mat-fab color="primary" mat-dialog-close>
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <button mat-fab color="primary" style="float:right;">
+      <mat-icon>send</mat-icon>
+    </button>
+  </div>
+</section>
+<section>
+  <form>
+    <section>
+      <mat-form-field>
+        <input matInput placeholder="Username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Father/Husband name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Aadhaar">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Mobile No">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea rows="1" matInput placeholder="Address" style="resize: none;"></textarea>
+      </mat-form-field>
+      <section>
+        <mat-radio-group>
+          <mat-radio-button value="M">Male&nbsp;&nbsp;&nbsp;</mat-radio-button>
+          <mat-radio-button value="F">Female</mat-radio-button>
+        </mat-radio-group>
+      </section>
+      <mat-form-field>
+        <input matInput placeholder="Caste">
+      </mat-form-field>
+    </section>
+    <section>
+      <mat-form-field>
+        <input matInput placeholder="Bank">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="IFSC">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Account#">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Applied on">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Mandal">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="District">
+      </mat-form-field>
+    </section>
+  </form>
+</section>

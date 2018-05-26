@@ -1,0 +1,20 @@
+<mat-progress-bar mode="{{mode}}"></mat-progress-bar>
+<section class="table_view mat-elevation-z8">
+  <table mat-table #table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="{{col}}" *ngFor="let col of displayedColumns">
+      <th mat-header-cell *matHeaderCellDef> {{(getColumnName(col).length!=0)?getColumnName(col):col}} </th>
+      <td mat-cell *matCellDef="let row"> {{row[col]}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</section>
+<mat-paginator [hidePageSize]="true" [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" [pageIndex]="pageIndex"
+  (page)="pageEvent = $event;onPaginateChange($event)"></mat-paginator>
+<section id="beneficiaries_add">
+  <button mat-fab color="primary" (click)="addBeneficiaryDialog();">
+    <mat-icon>add</mat-icon>
+  </button>
+</section>

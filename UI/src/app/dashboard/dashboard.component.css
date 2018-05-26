@@ -1,0 +1,29 @@
+.mat-card{
+    display: inline-block;
+    margin: 3px;
+    color: #ffffff;
+    text-align: center;
+    max-height: 15vh;
+    min-width: 50vh;
+    line-height: 1px;
+}
+
+.mat-card section{
+    margin-top: -20px;
+}
+
+.mat-card:nth-child(even){
+    background-color: #4da144;
+}
+
+.mat-card:nth-child(odd){
+    background-color: #272f3a;
+}
+
+.cards_view section h3{
+    text-indent: 0.5%;
+}
+
+.cards_view{
+    padding-left: 10%;
+}
